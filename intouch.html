@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Nkosi Mbewe Law Group | We're Here to Help</title>
+    <!-- Linking Font Awesome font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles3.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <img src="./images/NKOSIMBEWElawgrouplogo.png" alt="Logo" class="logo">
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact"><button class="nav-link login-signup-button">Contact Us</button></a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intouchContainer">
+            <!-- Hero Image Section -->
+            <div class="top-image">
+                <img src="./images/family matters.png" alt="Legal Consultation">
+            </div>
+            
+            <!-- Booking Section -->
+            <div class="middle-section">
+                <div class="side-image">
+                    <img src="./images/gavel.png" alt="Legal Symbol">
+                </div>
+                <div class="booking-section">
+                    <div class="booking-card">
+                        <div class="card-content">
+                            <h2>Let's Discuss Your Rights</h2>
+                            <p>Schedule a 15-minute consultation with one of our experienced legal practitioners to discuss your legal needs.</p>
+                            <button onclick="window.location.href='book-call.html'">Book Your Consultation</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-image">
+                    <img src="./images/gavel.png" alt="Legal Symbol">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us Section -->
+        <section id="contact-us">
+            <div class="contact-container">
+                <h2>Connect With Us</h2>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/groups/1901170070344029" target="_blank" class="social-link">
+                        <img src="./images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/thelawsocietyofsouthafrica/?hl=en" target="_blank" class="social-link">
+                        <img src="./images/instragram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@jrlawgroup" target="_blank" class="social-link">
+                        <img src="./images/tiktok.png" alt="TikTok">
+                    </a>
+                    <a href="https://www.linkedin.com/jobs/view/3877281735/?alternateChannel=search&refId=eb1dbaaa-c6f4-466b-9dc1-101bebeb7a49&trackingId=RsgJq8tsSxikSGvx9ITP7g%3D%3D" target="_blank" class="social-link">
+                        <img src="./images/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <p><span class="homeContactHeading">Email: </span><a class="homeContactLinks" href="mailto:admin@nkosimbewelawgroup.co.za">admin@nkosimbewelawgroup.co.za</a></p>
+                    <p>For more info or any complaint, you can reach:</p>
+                    <p><span class="homeContactHeading">Email: </span><a class="homeContactLinks" href="mailto:info@nkosimbewelawgroup.co.za">info@nkosimbewelawgroup.co.za</a></p>
+                    <p><span class="homeContactHeading">WhatsApp: </span><a class="homeContactLinks" href="https://wa.me/+27787752229">076 610 1628</a></p>
+                </div>
+            </div>
+        </section>
+
+
+
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">
+                &copy; <span id="current-year"></span> Nkosi Mbewe Law Group
+            </p>
+
+            <p class="policy-text">
+                <a href="#" class="policy-link">Privacy policy</a>
+                <span class="separator">•</span>
+                <a href="#" class="policy-link">Lesson policy</a>
+            </p>
+        </div>
+    </footer>
+    </main>
+
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+
+    <script>
+      document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+          const item = question.parentElement;
+          const answer = item.querySelector('.faq-answer');
+          const icon = item.querySelector('.toggle-icon i');
+          
+          // Toggle active class
+          item.classList.toggle('active');
+          
+          // Toggle icon
+          if (item.classList.contains('active')) {
+            icon.classList.remove('fa-chevron-down');
+            icon.classList.add('fa-chevron-up');
+          } else {
+            icon.classList.remove('fa-chevron-up');
+            icon.classList.add('fa-chevron-down');
+          }
+        });
+      });
+      </script>
+    
+</body>
+</html>

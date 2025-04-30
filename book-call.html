@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Nkosi Mbewe Law Group | Trusted Legal Guidance</title>
+    <!-- Linking Font Awesome font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style4.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                <img src="./images/NKOSIMBEWElawgrouplogo.png" alt="Logo" class="logo">
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact"><button class="nav-link login-signup-button">Contact Us</button></a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Book Your 15-Minute Consultation</h1>
+        <p>We look forward to discussing your rights and assisting you with our expertise.</p>
+        <div class="bookingContainer">
+          <div class="bookingMain">
+            <form class="bookingForm" action="book_a_call.php" method="POST" onsubmit="showBookingConfirmation(event)">
+              <div class="bookingForm-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+              </div>
+              <div class="bookingForm-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address" />
+              </div>
+              <div class="bookingForm-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="bookingForm-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+              <div class="bookingForm-group">
+                <button type="submit">Schedule Consultation</button>
+              </div>
+            </form>
+            <span id="callBooking"></span>
+          </div>
+        </div>
+      </section>
+      </main>
+
+    <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">&copy; <span id="current-year"></span> Nkosi Mbewe Law Group</p>
+            <div class="social-link-list">
+                <a href="https://www.facebook.com/groups/1901170070344029" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/jobs/view/3877281735/?alternateChannel=search&refId=eb1dbaaa-c6f4-466b-9dc1-101bebeb7a49&trackingId=RsgJq8tsSxikSGvx9ITP7g%3D%3D" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/thelawsocietyofsouthafrica/?hl=en" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@jrlawgroup" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p class="policy-text">
+                <a href="#" class="policy-link">Privacy policy</a>
+                <span class="separator">•</span>
+                <a href="#" class="policy-link">Lesson policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Book a Call Section -->
+    <script>
+      function showBookingConfirmation(event) {
+        event.preventDefault(); // Prevent form from submitting immediately
+    
+        const form = event.target;
+        const name = form.name.value;
+    
+        alert(`Thank you, ${name}, for booking your consultation. We will be in touch shortly!`);
+    
+        form.reset(); // Clear form fields
+    
+        // Optional: submit the form manually if still needed (e.g. if using PHP backend)
+        // form.submit(); // Uncomment this if you still want the data to be sent to book_a_call.php
+      }
+    </script>
+
+    <script>
+        // Mobile menu toggle
+        const menuOpenButton = document.getElementById('menu-open-button');
+        const menuCloseButton = document.getElementById('menu-close-button');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        menuOpenButton.addEventListener('click', () => {
+            navMenu.classList.add('active');
+        });
+        
+        menuCloseButton.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+        
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
