@@ -374,6 +374,19 @@ header .navbar {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.banner-section {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .services-grid {

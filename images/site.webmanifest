@@ -1,0 +1,21 @@
+{
+    "name": "Nkosi Mbewe Law Group",
+    "short_name": "nkosimbewelaw",
+    "description": "Nkosi Mbewe Law Group - Your Rights. Our Mission..",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4285f4",
+    "icons": [
+      {
+        "src": "images/nkosimbewelawgroup-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "images/nkosimbewelawgroup-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }

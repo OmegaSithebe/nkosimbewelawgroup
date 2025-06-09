@@ -244,24 +244,21 @@ header .navbar {
   margin-top: 1rem;
 }
 
+.aboutImageRow {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* spacing between images */
+  flex-wrap: wrap; /* stacks on small screens */
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
 .aboutcontainerTopImage {
-  margin: 0 auto 4rem;
-  max-width: 1000px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  flex: 1 1 45%; /* each image takes roughly half width */
+  max-width: 500px;
+  margin: 0;
 }
 
-.aboutcontainerTopImage img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: var(--transition);
-}
-
-.aboutcontainerTopImage:hover img {
-  transform: scale(1.02);
-}
 
 .about-content {
   max-width: 900px;
@@ -332,6 +329,31 @@ header .navbar {
   font-weight: 600;
   color: var(--primary-color);
 }
+
+/* External CSS file: styles.css */
+.tribute-section {
+  margin-top: 50px;
+}
+
+.tribute-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+.pricing-plan {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.inspirational-message {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
 
 /* Contact Section */
 #contact-us {
@@ -765,6 +787,8 @@ h1, h2 {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(26, 62, 114, 0.4);
 }
+
+
 
 /* Contact Section */
 #contact-us {
