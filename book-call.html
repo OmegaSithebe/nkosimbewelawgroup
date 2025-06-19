@@ -9,12 +9,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Nkosi Mbewe Law Group | Trusted Legal Guidance</title>
-    <!-- Linking Font Awesome font icons -->
+    <!-- Single Font Awesome include -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/style4.css">
     <!-- Linking Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -47,27 +46,27 @@
         <p>We look forward to discussing your rights and assisting you with our expertise.</p>
         <div class="bookingContainer">
           <div class="bookingMain">
-            <form class="bookingForm" action="book_a_call.php" method="POST" onsubmit="showBookingConfirmation(event)">
-              <div class="bookingForm-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your full name" />
-              </div>
-              <div class="bookingForm-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email address" />
-              </div>
-              <div class="bookingForm-group">
-                <label for="date">Preferred Date</label>
-                <input type="date" id="date" name="date" required />
-              </div>
-              <div class="bookingForm-group">
-                <label for="time">Preferred Time</label>
-                <input type="time" id="time" name="time" required />
-              </div>
-              <div class="bookingForm-group">
-                <button type="submit">Schedule Consultation</button>
-              </div>
-            </form>
+          <form class="bookingForm" action="schedule_consultation.php" method="POST" onsubmit="return showBookingConfirmation(event)">
+            <div class="bookingForm-group">
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name" />
+            </div>
+            <div class="bookingForm-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email address" />
+            </div>
+            <div class="bookingForm-group">
+              <label for="preferredDate">Preferred Date</label>
+              <input type="date" id="preferredDate" name="preferredDate" required />
+            </div>
+            <div class="bookingForm-group">
+              <label for="preferredTime">Preferred Time</label>
+              <input type="time" id="preferredTime" name="preferredTime" required />
+            </div>
+            <div class="bookingForm-group">
+              <button type="submit">Schedule Consultation</button>
+            </div>
+          </form>
             <span id="callBooking"></span>
           </div>
         </div>
@@ -91,23 +90,6 @@
         </div>
     </footer>
 
-    <!-- Book a Call Section -->
-    <script>
-      function showBookingConfirmation(event) {
-        event.preventDefault(); // Prevent form from submitting immediately
-    
-        const form = event.target;
-        const name = form.name.value;
-    
-        alert(`Thank you, ${name}, for booking your consultation. We will be in touch shortly!`);
-    
-        form.reset(); // Clear form fields
-    
-        // Optional: submit the form manually if still needed (e.g. if using PHP backend)
-        // form.submit(); // Uncomment this if you still want the data to be sent to book_a_call.php
-      }
-    </script>
-
     <script>
         // Mobile menu toggle
         const menuOpenButton = document.getElementById('menu-open-button');
@@ -124,5 +106,15 @@
         
         // Set current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        function showBookingConfirmation(event) {
+          const form = event.target;
+          const name = form.fullname.value;
+
+          // Show confirmation but allow form to submit
+          alert(`Thank you, ${name}, for booking your consultation. We will be in touch shortly!`);
+          return true;
+        }
     </script>
 </body>
+</html>

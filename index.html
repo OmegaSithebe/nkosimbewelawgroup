@@ -99,11 +99,11 @@
                     </li>
                 </ul>
             </div>
-            
+                        
             <div class="registration-block">
                 <h2>Stay Informed</h2>
                 <p>Subscribe to receive legal updates, practice news, and valuable insights directly to your inbox.</p>
-                <form id="registrationForm">
+                <form id="registrationForm" action="stay_connected.php" method="POST" onsubmit="return showConfirmation(event)">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required placeholder="Enter your full name">
@@ -286,86 +286,107 @@
 
     </section> 
      
-<!-- Contact Us section -->
-<section class="contact-section" id="contact">
-    <div class="section-header">
-        <h2>Contact Us</h2>
-        <p>We’re here to help you take the next step. Reach out with your questions, ideas, or feedback — let’s start the conversation.</p>
-    </div>
-
-    <div class="section-content">
-        <ul class="contact-info-list">
-            <li class="contact-info">
-                <i class="fa-solid fa-location-crosshairs"></i>
-                <p><a href="https://www.google.com/maps/search/103+A+Zandspruit+Honeydew+2040/">103 A Zandspruit Honeydew 2040</a></p>
-            </li>
-            <li class="contact-info">
-                <i class="fa-regular fa-envelope"></i>
-                <p><a href="mailto:admin@nkosimbewelawgroup.co.za">admin@nkosimbewelawgroup.co.za</a></p>
-            </li>
-            <li class="contact-info">
-                <i class="fa-regular fa-envelope"></i>
-                <p><a href="mailto:info@nkosimbewelawgroup.co.za">info@nkosimbewelawgroup.co.za</a></p>
-            </li>
-            <li class="contact-info">
-                <i class="fa-solid fa-phone"></i>
-                <p><a href="https://wa.me/27827064085">076 610 1628</a></p>
-            </li>
-            <li class="contact-info">
-                <i class="fa-regular fa-clock"></i>
-                <p>Monday - Friday: 09:00 AM to 03:00 PM</p>
-            </li>
-            <li class="contact-info">
-                <i class="fa-regular fa-clock"></i>
-                <p>Saturday & Sunday: Closed<br>Available on weekends/holidays by appointment only.</p>
-            </li>
-            <li class="contact-info">
-                <i class="fa-solid fa-globe"></i>
-                <p><a href="https://www.mbewegroup.co.za/">www.mbewegroup.co.za</a></p>
-            </li>
-        </ul>
-
-        <form action="#" class="contact-form" onsubmit="showThankYouMessage(event)">
-            <input type="text" placeholder="Your name" class="form-input" required>
-            <input type="email" placeholder="Your email" class="form-input" required>
-            <textarea placeholder="Your message" class="form-input" required></textarea>
-            <button type="submit" class="button submit-button">Submit</button>
-            
-            <div class="form-group">
-                <small>
-                    <strong>Disclaimer:</strong><br>
-                    We prefer calls or emails with full details or disclosure from potential clients.<br><br>
-                    <strong>Please Take Notice:</strong><br>
-                    We will only deal with WhatsApp calls and messages after we have thoroughly and formally assessed, verified, and approved your cases of whatever nature as being valid and legit and ready for prosecution or resolution.<br><br>
-                    Thanks.<br>
-                    By management and good ethics application and approach.
-                </small>
-            </div>
-        </form>
-    </div>
-</section>
-
-<!-- Footer section -->
-<footer class="footer-section">
-    <div class="section-content">
-        <p class="copyright-text">
-            &copy; <span id="current-year"></span> Nkosi Mbewe Law Group
-        </p>
-
-        <div class="social-link-list">
-            <a href="https://www.facebook.com/groups/1901170070344029" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/jobs/view/3877281735/?alternateChannel=search&refId=eb1dbaaa-c6f4-466b-9dc1-101bebeb7a49&trackingId=RsgJq8tsSxikSGvx9ITP7g%3D%3D" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/thelawsocietyofsouthafrica/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@jrlawgroup" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+    <!-- Contact Us section -->
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>We’re here to help you take the next step. Reach out with your questions, ideas, or feedback — let’s start the conversation.</p>
         </div>
 
-        <p class="policy-text">
-            <a href="#" class="policy-link">Privacy policy</a>
-            <span class="separator">•</span>
-            <a href="#" class="policy-link">Lesson policy</a>
-        </p>
-    </div>
-</footer>
+        <div class="section-content">
+            <ul class="contact-info-list">
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p><a href="https://www.google.com/maps/search/103+A+Zandspruit+Honeydew+2040/">103 A Zandspruit Honeydew 2040</a></p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p><a href="mailto:admin@nkosimbewelawgroup.co.za">admin@nkosimbewelawgroup.co.za</a></p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p><a href="mailto:info@nkosimbewelawgroup.co.za">info@nkosimbewelawgroup.co.za</a></p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><a href="https://wa.me/27827064085">076 610 1628</a></p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Monday - Friday: 09:00 AM to 03:00 PM</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Saturday & Sunday: Closed<br>Available on weekends/holidays by appointment only.</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-globe"></i>
+                    <p><a href="https://www.mbewegroup.co.za/">www.mbewegroup.co.za</a></p>
+                </li>
+            </ul>
+
+            <form action="contact_us.php" class="contact-form" method="POST">
+                <input type="text" name="name" placeholder="Your name" class="form-input" required>
+                <input type="email" name="email" placeholder="Your email" class="form-input" required>
+                <textarea name="message" placeholder="Your message" class="form-input" required></textarea>
+                <button type="submit" class="button submit-button">Submit</button>
+                
+                <div class="form-group">
+                    <small>
+                        <strong>Disclaimer:</strong><br>
+                        We prefer calls or emails with full details or disclosure from potential clients.<br><br>
+                        <strong>Please Take Notice:</strong><br>
+                        We will only deal with WhatsApp calls and messages after we have thoroughly and formally assessed, verified, and approved your cases of whatever nature as being valid and legit and ready for prosecution or resolution.<br><br>
+                        Thanks.<br>
+                        By management and good ethics application and approach.
+                    </small>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">
+                &copy; <span id="current-year"></span> Nkosi Mbewe Law Group
+            </p>
+
+            <div class="social-link-list">
+                <a href="https://www.facebook.com/groups/1901170070344029" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/jobs/view/3877281735/?alternateChannel=search&refId=eb1dbaaa-c6f4-466b-9dc1-101bebeb7a49&trackingId=RsgJq8tsSxikSGvx9ITP7g%3D%3D" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/thelawsocietyofsouthafrica/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@jrlawgroup" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+
+            <p class="policy-text">
+                <a href="#" class="policy-link">Privacy policy</a>
+                <span class="separator">•</span>
+                <a href="#" class="policy-link">Lesson policy</a>
+            </p>
+        </div>
+    </footer>
+</main>
+
+<!-- Stay connected section -->
+<script>
+function showConfirmation(event) {
+    const form = event.target;
+    const name = form.name.value;
+    alert(`Thank you, ${name}, for subscribing to our updates!`);
+    return true; // Allow form to submit
+}
+</script>
+
+<!-- Contact Us section -->
+ <script>
+function showThankYouMessage(event) {
+    const form = event.target;
+    const name = form.name.value;
+    alert(`Thank you, ${name}, for contacting us! We'll get back to you soon.`);
+    return true; // Allow form to submit
+}
+</script>
 
 <!-- Dynamic Year Script -->
 <script>
@@ -376,42 +397,6 @@
         alert("Thank you! Your message has been submitted.");
     }
 </script>
-
-<!-- Contact Us Section -->
-<script>
-    function showThankYouMessage(event) {
-      event.preventDefault(); // Prevent the form from submitting normally
-  
-      alert("Thank you for submitting your message. We will be in touch shortly.");
-  
-      // Optionally reset the form
-      event.target.reset();
-    }
-  </script>
-
-<!-- Subcribe Now Section -->
-<script>
-    document.getElementById("registrationForm").addEventListener("submit", function(e) {
-      e.preventDefault(); // Prevent actual form submission
-  
-      const nameInput = document.getElementById("name");
-      const userName = nameInput.value.trim();
-  
-      if (userName) {
-        const messageElement = document.getElementById("confirmationMessage");
-        messageElement.textContent = `Thank you, ${userName}, for subscribing! We’ll keep you posted on our latest updates.`;
-        messageElement.style.display = "block";
-  
-        this.reset(); // Reset form fields
-      }
-    });
-  </script>
-
-    </main>
-
-    <button id="scrollToggleBtn" class="scroll-button">
-        <i class="fas fa-chevron-down"></i>
-    </button>
 
 
     <script>
