@@ -878,6 +878,45 @@ h1, h2 {
 }
 
 
+/* Nkosi Mbewe Law images */
+.nkosi-images-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+.nkosi-image-container {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    transition: box-shadow 0.3s;
+    background: #fff;
+    max-width: 350px;
+}
+.nkosi-zoom-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+}
+.nkosi-image-container:hover .nkosi-zoom-image {
+    transform: scale(1.08);
+}
+.nkosi-image-container:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+}
+@media (max-width: 800px) {
+    .nkosi-images-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .nkosi-image-container {
+        max-width: 90vw;
+    }
+}
+
 
 /* Contact Section */
 #contact-us {

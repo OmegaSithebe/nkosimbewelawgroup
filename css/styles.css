@@ -585,6 +585,172 @@ header .navbar {
     }
 }
 
+ /* New Paralegal Section  */
+     /* Paralegal Support Styles */
+    .paralegal-support {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-radius: 10px;
+        margin-top: 60px;
+        padding: 40px 0;
+        border-top: 4px solid #2c98f0;
+        box-shadow: 0 5px 30px rgba(0,0,0,0.05);
+    }
+    
+    .support-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .support-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .support-header h3 {
+        color: #2c98f0;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .support-header h3 i {
+        margin-right: 10px;
+    }
+    
+    .support-header p {
+        color: #555;
+        font-size: 16px;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+    
+    .support-columns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .support-role, .support-qualities {
+        flex: 1;
+        min-width: 300px;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    
+    .support-role h4, .support-qualities h4 {
+        color: #2c98f0;
+        font-size: 20px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 10px;
+    }
+    
+    .support-role h4 i, .support-qualities h4 i {
+        margin-right: 10px;
+    }
+    
+    .role-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .role-list li {
+        padding: 12px 0;
+        border-bottom: 1px dashed #eee;
+        position: relative;
+        padding-left: 35px;
+    }
+    
+    .role-list li:last-child {
+        border-bottom: none;
+    }
+    
+    .role-list li i {
+        color: #2c98f0;
+        position: absolute;
+        left: 0;
+        top: 14px;
+        font-size: 16px;
+    }
+    
+    .qualities-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .quality-pill {
+        background: #f8f9fa;
+        padding: 12px 15px;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+    
+    .quality-pill:hover {
+        background: #2c98f0;
+        color: white;
+    }
+    
+    .quality-pill:hover i {
+        color: white;
+    }
+    
+    .quality-pill i {
+        color: #2c98f0;
+        margin-right: 8px;
+        font-size: 14px;
+    }
+    
+    .support-cta {
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .support-cta p {
+        color: #666;
+        margin-bottom: 20px;
+        font-style: italic;
+    }
+    
+    .cta-button {
+        background: #2c98f0;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    
+    .cta-button:hover {
+        background: #1a7bc9;
+        transform: translateY(-2px);
+    }
+    
+    .cta-button i {
+        margin-left: 8px;
+        font-size: 12px;
+    }
+    
+    @media (max-width: 768px) {
+        .qualities-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .support-role, .support-qualities {
+            min-width: 100%;
+        }
+    }
+
 /* Testimonials Section */
 .testimonials-section {
     padding: 5rem 2rem;
