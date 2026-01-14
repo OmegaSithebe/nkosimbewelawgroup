@@ -19,7 +19,7 @@
 <body>
     <header>
         <nav class="navbar section-content">
-            <a href="#" class="nav-logo">
+            <a href="/" class="nav-logo">
                 <img src="./images/NKOSIMBEWElawgrouplogo.png" alt="Logo" class="logo">
             </a>
             <ul class="nav-menu">
@@ -347,40 +347,185 @@
     <section class="contact-section" id="contact">
         <div class="section-header">
             <h2>Contact Us</h2>
-            <p>We’re here to help you take the next step. Reach out with your questions, ideas, or feedback — let’s start the conversation.</p>
+            <p>We're here to help you take the next step. Reach out with your questions, ideas, or feedback — let's start the conversation.</p>
         </div>
 
         <div class="section-content">
-            <ul class="contact-info-list">
-                <li class="contact-info">
-                    <i class="fa-solid fa-location-crosshairs"></i>
-                    <p><a href="https://www.google.com/maps/search/103+A+Zandspruit+Honeydew+2040/">103 A Zandspruit Honeydew 2040</a></p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p><a href="mailto:admin@nkosimbewelawgroup.co.za">admin@nkosimbewelawgroup.co.za</a></p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p><a href="mailto:info@nkosimbewelawgroup.co.za">info@nkosimbewelawgroup.co.za</a></p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-solid fa-phone"></i>
-                    <p><a href="https://wa.me/27827064085">076 610 1628</a></p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-regular fa-clock"></i>
-                    <p>Monday - Friday: 09:00 AM to 03:00 PM</p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-regular fa-clock"></i>
-                    <p>Saturday & Sunday: Closed<br>Available on weekends/holidays by appointment only.</p>
-                </li>
-                <li class="contact-info">
-                    <i class="fa-solid fa-globe"></i>
-                    <p><a href="https://www.mbewegroup.co.za/">www.mbewegroup.co.za</a></p>
-                </li>
-            </ul>
+            <div class="contact-info-wrapper">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p><a href="https://www.google.com/maps/search/103+A+Zandspruit+Honeydew+2040/">103 A Zandspruit Honeydew 2040</a></p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p><a href="mailto:admin@nkosimbewelawgroup.co.za">admin@nkosimbewelawgroup.co.za</a></p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p><a href="mailto:info@nkosimbewelawgroup.co.za" onclick="window.location.href='mailto:info@nkosimbewelawgroup.co.za'" style="cursor: pointer; text-decoration: underline;">info@nkosimbewelawgroup.co.za</a></p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p><a href="https://wa.me/27827064085">076 610 1628</a></p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday - Friday: 09:00 AM to 03:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Saturday &amp; Sunday: Closed<br>Available on weekends/holidays by appointment only.</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p><a href="https://www.mbewegroup.co.za/">www.mbewegroup.co.za</a></p>
+                    </li>
+                </ul>
+
+                <!-- Banking Details Section - Styled to match site theme -->
+                <div class="banking-details banking-card" aria-labelledby="bankingHeading">
+                    <h3 id="bankingHeading"><i class="fa-solid fa-building-columns"></i> Banking Details</h3>
+
+                    <div class="bank-row">
+                        <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+                        <div class="banking-item">
+                            <div class="bank-label">Account Name</div>
+                            <div class="bank-value">Nkosi Mbewe Law Group Bank Account</div>
+                        </div>
+                    </div>
+
+                    <div class="bank-row">
+                        <i class="fa-solid fa-hashtag" aria-hidden="true"></i>
+                        <div class="banking-item">
+                            <div class="bank-label">Account Number</div>
+                            <div class="bank-value">1054 4218 20</div>
+                        </div>
+                    </div>
+
+                    <div class="bank-row">
+                        <i class="fa-solid fa-university" aria-hidden="true"></i>
+                        <div class="banking-item">
+                            <div class="bank-label">Bank</div>
+                            <div class="bank-value">Capitec Business</div>
+                        </div>
+                    </div>
+
+                    <div class="bank-row">
+                        <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                        <div class="banking-item">
+                            <div class="bank-label">Branch / Type</div>
+                            <div class="bank-value">Business Account</div>
+                        </div>
+                    </div>
+
+                    <div class="bank-footnote">
+                        <small>Please quote your full name and matter reference on payments.</small>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                /* Banking details styling — matches site's clean card look */
+                .contact-info-wrapper {
+                    display: grid;
+                    grid-template-columns: 1fr 320px;
+                    gap: 24px;
+                    align-items: start;
+                }
+
+                /* Contact list tweaks (align icons with theme) */
+                .contact-info-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                .contact-info {
+                    display: flex;
+                    gap: 12px;
+                    align-items: flex-start;
+                    padding: 10px 0;
+                    border-bottom: 1px solid rgba(0,0,0,0.04);
+                }
+                .contact-info i {
+                    color: #2c6fdb; /* accent color consistent with buttons/icons */
+                    font-size: 20px;
+                    width: 28px;
+                    text-align: center;
+                    margin-top: 2px;
+                }
+                .contact-info p {
+                    margin: 0;
+                    color: #333;
+                }
+                .contact-info a {
+                    color: inherit;
+                    text-decoration: none;
+                    border-bottom: 1px dashed rgba(44,111,219,0.15);
+                }
+
+                /* Banking card */
+                .banking-card {
+                    background: linear-gradient(180deg, rgba(255,255,255,0.98), #ffffff);
+                    border-radius: 12px;
+                    box-shadow: 0 10px 24px rgba(18, 38, 63, 0.06);
+                    padding: 18px;
+                    border: 1px solid rgba(44,111,219,0.06);
+                }
+                .banking-card h3 {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin: 0 0 12px 0;
+                    font-size: 1.05rem;
+                    color: #1f2937;
+                }
+                .banking-card h3 i {
+                    color: #2c6fdb;
+                    font-size: 1.15rem;
+                }
+
+                .bank-row {
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                    padding: 10px 0;
+                    border-top: 1px solid rgba(15, 23, 42, 0.03);
+                }
+                .bank-row:first-of-type {
+                    border-top: 0;
+                }
+                .bank-row i {
+                    color: #2c6fdb;
+                    font-size: 18px;
+                    width: 30px;
+                    text-align: center;
+                }
+                .banking-item .bank-label {
+                    font-size: 0.85rem;
+                    color: #6b7280;
+                    margin-bottom: 4px;
+                }
+                .banking-item .bank-value {
+                    font-weight: 600;
+                    color: #111827;
+                }
+                .bank-footnote {
+                    margin-top: 12px;
+                    color: #6b7280;
+                    font-size: 0.82rem;
+                }
+
+                /* Responsive: stack columns on smaller screens */
+                @media (max-width: 880px) {
+                    .contact-info-wrapper {
+                        grid-template-columns: 1fr;
+                    }
+                    .banking-card {
+                        margin-top: 8px;
+                    }
+                }
+            </style>
 
             <form action="contact_us.php" class="contact-form" method="POST">
                 <input type="text" name="name" placeholder="Your name" class="form-input" required>
@@ -404,6 +549,90 @@
 
     <!-- Footer section -->
     <footer class="footer-section">
+        <!-- Mbewe Group Section -->
+        <div class="mbewe-group-section" style="background: linear-gradient(135deg, #0c3c60 0%, #1a5a8a 100%); color: white; padding: 40px 20px; border-bottom: 3px solid #d4af37;">
+            <div class="container" style="max-width: 1200px; margin: 0 auto;">
+                <div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+                    
+                    <!-- Logo Column -->
+                    <div class="logo-column" style="flex: 0 0 250px;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; border: 2px solid rgba(255,255,255,0.2); text-align: center;">
+                                <img src="./images/mbeweGroup_back.png" alt="Mbewe Group" style="max-width: 200px; height: auto;">
+                            <p style="margin-top: 15px; font-size: 0.95em; color: #d4af37; font-weight: 600;">
+                                <i class="fas fa-building" style="margin-right: 8px;"></i>
+                                Soiloni Mbewe Investment Holdings (Pty) Ltd
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information Column -->
+                    <div class="contact-column" style="flex: 1; min-width: 300px;">
+                        <h3 style="color: #d4af37; margin-bottom: 20px; font-size: 1.4em; border-left: 4px solid #d4af37; padding-left: 15px;">
+                            <i class="fas fa-balance-scale" style="margin-right: 10px;"></i>
+                            Mbewe Group Legal Representative
+                        </h3>
+                        
+                        <div class="contact-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            
+                            <!-- Phone Contacts -->
+                            <div class="contact-group" style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 6px;">
+                                <h4 style="color: #fff; margin-bottom: 12px; font-size: 1em; display: flex; align-items: center;">
+                                    <i class="fas fa-phone-volume" style="color: #4CAF50; margin-right: 10px; font-size: 1.1em;"></i>
+                                    Contact Numbers
+                                </h4>
+                                <p style="margin: 8px 0;">
+                                    <i class="fas fa-mobile-alt" style="color: #4CAF50; margin-right: 10px; width: 20px;"></i>
+                                    <a href="tel:+27827064085" style="color: white; text-decoration: none; font-weight: 500;">
+                                        082 706 4085
+                                    </a>
+                                    <span style="font-size: 0.85em; color: #aaa; margin-left: 10px;">Primary</span>
+                                </p>
+                                <p style="margin: 8px 0;">
+                                    <i class="fas fa-mobile-alt" style="color: #4CAF50; margin-right: 10px; width: 20px;"></i>
+                                    <a href="tel:+27832675894" style="color: white; text-decoration: none; font-weight: 500;">
+                                        083 267 5894
+                                    </a>
+                                    <span style="font-size: 0.85em; color: #aaa; margin-left: 10px;">Secondary</span>
+                                </p>
+                            </div>
+
+                            <!-- Digital Contacts -->
+                            <div class="contact-group" style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 6px;">
+                                <h4 style="color: #fff; margin-bottom: 12px; font-size: 1em; display: flex; align-items: center;">
+                                    <i class="fas fa-globe-africa" style="color: #2196F3; margin-right: 10px; font-size: 1.1em;"></i>
+                                    Digital Channels
+                                </h4>
+                                <p style="margin: 8px 0;">
+                                    <i class="fas fa-globe" style="color: #2196F3; margin-right: 10px; width: 20px;"></i>
+                                    <a href="https://www.mbewegroup.co.za" target="_blank" style="color: white; text-decoration: none; font-weight: 500;">
+                                        www.mbewegroup.co.za
+                                    </a>
+                                </p>
+                                <p style="margin: 8px 0;">
+                                    <i class="fas fa-envelope" style="color: #FF9800; margin-right: 10px; width: 20px;"></i>
+                                    <a href="mailto:admin@mbewegroup.co.za" style="color: white; text-decoration: none; font-weight: 500;">
+                                        admin@mbewegroup.co.za
+                                    </a>
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                        <!-- Legal Notice -->
+                        <div style="margin-top: 20px; padding: 12px; background: rgba(255,255,255,0.08); border-radius: 4px; border-left: 3px solid #d4af37;">
+                            <p style="font-size: 0.85em; color: #ccc; margin: 0; line-height: 1.5;">
+                                <i class="fas fa-exclamation-circle" style="color: #d4af37; margin-right: 8px;"></i>
+                                Note: Email address corrected from "mbewegrouo.co.za" to "mbewegroup.co.za". 
+                                Soiloni Mbewe Investment Holdings provides strategic legal and investment consultation.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
         <div class="section-content">
             <p class="copyright-text">
                 &copy; <span id="current-year"></span> Nkosi Mbewe Law Group
@@ -423,6 +652,9 @@
             </p>
         </div>
     </footer>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </main>
 
 <!-- Stay connected section -->
