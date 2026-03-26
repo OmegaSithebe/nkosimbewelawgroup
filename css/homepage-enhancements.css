@@ -1,0 +1,605 @@
+/* ============================================
+   HOMEPAGE ENHANCEMENTS - Nkosi Mbewe Law Group
+   Professional, Conversion-Focused Styles
+   ============================================ */
+
+/* Section Tag Styling */
+.section-tag {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--secondary-color);
+    background: rgba(233, 185, 73, 0.1);
+    padding: 5px 12px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+/* Hero Section Enhancements */
+.hero-section .title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-accent {
+    color: var(--secondary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.hero-accent::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--secondary-color);
+    opacity: 0.5;
+}
+
+/* Pulse Animation for CTA Button */
+.pulse-btn {
+    position: relative;
+    animation: pulse 2s infinite;
+    background: var(--secondary-color) !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(233, 185, 73, 0.3);
+}
+
+.pulse-btn:hover {
+    animation: none;
+    transform: translateY(-2px);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(233, 185, 73, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(233, 185, 73, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(233, 185, 73, 0);
+    }
+}
+
+/* Trust Indicators */
+.trust-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.trust-item i {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* ============================================
+   CONSULTATION SECTION - NEW ON HOMEPAGE
+   ============================================ */
+.consultation-section {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+}
+
+.consultation-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.consultation-info {
+    padding: 3rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0f2b4a 100%);
+    color: white;
+}
+
+.consultation-info .badge {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.consultation-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.consultation-info h2 .highlight {
+    color: var(--secondary-color);
+}
+
+.consultation-info p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.benefit-item i {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.contact-info-mini {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-info-mini p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.contact-info-mini a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.contact-info-mini a:hover {
+    text-decoration: underline;
+}
+
+/* Consultation Form Container */
+.consultation-form-container {
+    padding: 2rem;
+    background: white;
+}
+
+.quick-consult-form h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-field {
+    margin-bottom: 1rem;
+}
+
+.form-field.full-width {
+    grid-column: span 2;
+}
+
+.form-field label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-field label i {
+    color: var(--secondary-color);
+    width: 20px;
+    margin-right: 5px;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(233, 185, 73, 0.1);
+}
+
+.submit-consult-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-consult-btn:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 62, 114, 0.3);
+}
+
+.submit-consult-btn i {
+    transition: transform 0.3s ease;
+}
+
+.submit-consult-btn:hover i {
+    transform: translateX(5px);
+}
+
+.form-note {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 1rem;
+}
+
+.form-note i {
+    margin-right: 5px;
+    color: var(--secondary-color);
+}
+
+/* ============================================
+   VISUAL SHOWCASE - About Section Enhancement
+   ============================================ */
+.visual-showcase {
+    flex: 1 1 500px;
+}
+
+.showcase-grid {
+    display: flex;
+    gap: 1rem;
+}
+
+.showcase-main {
+    flex: 1.2;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.showcase-subgrid {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.showcase-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.showcase-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.showcase-main img {
+    height: 100%;
+    min-height: 300px;
+}
+
+.showcase-subgrid .showcase-item {
+    height: calc(50% - 0.5rem);
+}
+
+.showcase-subgrid .showcase-item:first-child {
+    margin-bottom: 0;
+}
+
+.showcase-item:hover img {
+    transform: scale(1.05);
+}
+
+.showcase-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: white;
+    padding: 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.showcase-item:hover .showcase-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================================
+   WHY CHOOSE US SECTION
+   ============================================ */
+.why-choose-us {
+    padding: 5rem 2rem;
+    background: var(--light-color);
+}
+
+.why-content {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 3rem;
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+}
+
+.why-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.why-text > p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.why-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.why-item i {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    background: rgba(233, 185, 73, 0.1);
+    padding: 0.75rem;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.why-item h4 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    color: var(--primary-color);
+}
+
+.why-item p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.4;
+}
+
+.why-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.stat-number::after {
+    content: '+';
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+}
+
+/* Services CTA */
+.services-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.btn-outline:hover i {
+    transform: translateX(5px);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 1024px) {
+    .consultation-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .consultation-info {
+        padding: 2rem;
+    }
+    
+    .why-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .why-stats {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .stat-card {
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section .title {
+        font-size: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-field.full-width {
+        grid-column: span 1;
+    }
+    
+    .benefits-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .trust-indicators {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .showcase-grid {
+        flex-direction: column;
+    }
+    
+    .showcase-subgrid {
+        flex-direction: row;
+    }
+    
+    .showcase-subgrid .showcase-item {
+        width: 50%;
+        height: 200px;
+    }
+    
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .why-stats {
+        flex-direction: column;
+    }
+    
+    .stat-card {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .consultation-section {
+        padding: 3rem 1rem;
+    }
+    
+    .consultation-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .consultation-form-container {
+        padding: 1.5rem;
+    }
+    
+    .showcase-subgrid {
+        flex-direction: column;
+    }
+    
+    .showcase-subgrid .showcase-item {
+        width: 100%;
+    }
+}
